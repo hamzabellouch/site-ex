@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<link rel="icon" type="image/png" href="icons/icon32.png">
+<style>
+  :root { --card: #ffffff; --text: #0f172a; --muted: #64748b; color-scheme: light; }
+  html, body { background: #ffffff; margin: 0; }
+  body { font-family: 'Segoe UI', system-ui, -apple-system, Arial, sans-serif; padding: 10px; width: 264px; }
+  .card {
+    background: var(--card); color: var(--text);
+    border-radius: 28px; padding: 22px 18px 18px;
+    border: 1px solid #e2e8f0;
+  }
+  h3 { margin: 0 0 16px; font-size: 18px; font-weight: 700; text-align: center; letter-spacing: .2px; display: flex; align-items: center; justify-content: center; gap: 8px; }
+  h3 img { width: 22px; height: 22px; border-radius: 4px; }
+  button {
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+    width: 100%; margin-bottom: 10px; padding: 13px 18px;
+    border: 0; border-radius: 999px;
+    font: 600 14px 'Segoe UI', system-ui, Arial, sans-serif; color: #fff; cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .15);
+    transition: transform .12s ease, box-shadow .12s ease, filter .12s ease;
+  }
+  button:hover { transform: translateY(-1px); box-shadow: 0 6px 14px rgba(0, 0, 0, .2); filter: brightness(1.05); }
+  button:active { transform: translateY(0); }
+  button:focus-visible { outline: 3px solid rgba(37, 99, 235, .45); outline-offset: 2px; }
+  #pick { background: linear-gradient(135deg, #f97316, #ea580c); }
+  #one  { background: linear-gradient(135deg, #3b82f6, #2563eb); }
+  #all  { background: linear-gradient(135deg, #10b981, #059669); margin-bottom: 14px; }
+  small { display: block; color: var(--muted); text-align: center; font-size: 12px; line-height: 1.5; padding: 0 6px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <h3><img src="icons/icon32.png" alt="">Site Extractor</h3>
+    <button id="pick">🎯 Pick an element</button>
+    <button id="one">📄 Extract this page only</button>
+    <button id="all">🌐 Extract all linked pages</button>
+    <small>Page extraction opens a small window that runs automatically. Keep it open until it finishes.</small>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

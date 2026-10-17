@@ -1,0 +1,20 @@
+# Version control
+.git/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Build and IDE files
+node_modules/
+dist/
+build/
+.vscode/
+.idea/
+
+# Environment and secrets
+.env
+.env.local
+.env.*.local
+*.log
