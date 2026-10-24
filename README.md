@@ -135,30 +135,6 @@ firefox/
 > [!WARNING]
 > There is always a possibility of error or website incompatibility, so we assume no responsibility for any inaccuracies.
 
-</p>
-<h3 align="center">Version 1.0.0</h3>
-<p align="center">
-</p>
-
-> Changes — October 17, 2026
-
-- Full website crawling engine supporting deep recursive link extraction and relative asset structuring
-- High-fidelity single live page extraction preserving DOM states, external styles, fonts, and scripts
-- Visual element picker with real-time bounding box inspection, hierarchical breadcrumb paths, and click-to-capture
-- Dual element extraction engine: Clean modular CSS extraction and baseline-diffed computed style inlining
-- Shadow DOM flattening and pseudo-element (`::before` / `::after`) extraction into real DOM nodes
-- Interactive sandboxed code preview with Live (HTML+CSS+JS), HTML+CSS only, and Pixel-Accurate Snapshot views
-- Automated JavaScript dependency resolution engine dynamically identifying and linking missing script definitions
-- Draggable on-page floating toolbar with smooth snap physics and quick action triggers
-- Built-in offline ZIP archive packaging powered by JSZip with automatic local HTTP server launcher (`start-server.bat`)
-- Multi-browser Manifest V3 architecture with full support for Chromium-based browsers and Mozilla Firefox
-
-> Build Status
-
-```bash
-BUILD SUCCESSFUL
-```
-
 
 ### <a name="Copyright©2026"></a> Copyright © 2026
 
